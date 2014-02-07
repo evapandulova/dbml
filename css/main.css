@@ -129,9 +129,8 @@ body {
 .transparent h1 {
     color: #fff;
     text-align: center;
-    font-size: 150%;
-    margin: 0;
-    padding: 0
+    font-size: 130%;
+    margin: 0.8em;
 }
 
 .btn {
@@ -146,39 +145,47 @@ body {
     top: 35%;
 }
 
+#magnifier {
+    top: 75%;
+    left: 60%;
+    width: 50%;
+    position: absolute;
+
+}
+
 
 #btn1 {
-    top: 10%;
-    left: 2%;
+    top: 2%;
+    left: 1%;
 }
 
 #btn2 {
-    top: 20%;
-    left: 20%;
+    top: 4%;
+    left: 23%;
 }
 
 #btn3 {
-    top: 80%;
-    left: 80%;
+    top: 1%;
+    left: 40%;
 }
 
 #btn4 {
-    top: 52%;
-    left: 45%;
+    top: 5%;
+    left: 63%;
 }
 
 #btn5 {
-    top: 15%;
-    left: 75%;
+    top: 6%;
+    left: 81%;
 }
 
 #btn6 {
-    top: 60%;
-    left: 20%;
+    top: 15%;
+    left: 10%;
 }
 
 #btn7 {
-    top: 70%;
+    top: 15%;
     left: 40%;
 }
 
@@ -207,8 +214,8 @@ body {
     left: 10%;
 }
 #btn13 {
-    top: 10%;
-    left: 2%;
+    top: 51%;
+    left: 4%;
 }
 
 #btn14 {
@@ -242,29 +249,31 @@ body {
 }
 
 #btn20 {
-    top: 60%;
-    left: 60%;
+    top: 64%;
+    left: 86%;
 }
 
 #btn21 {
     top: 25%;
-    left: 70%;
+    left: -3%;
 }
 
 #btn22 {
-    top: 20%;
-    left: 40%;
+    top: 45%;
+    left: 78%;
 }
 
 #btn23 {
-    top: 85%;
-    left: 30%;
+    top: 48%;
+    left: 23%;
 }
 
 #btn24 {
-    top: 80%;
-    left: 10%;
+    top: 69%;
+    left: 160%;
 }
+
+
 
 
 

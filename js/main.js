@@ -1,29 +1,37 @@
 /*jslint browser:true, devel:true*/
-var lupe = function () {
+var lastAccX = 0,
+    lastAccY = 0,
+    lastAccZ = 0,
+    sensitivity = 20,
+
+    did_shake_phone = function () {
         'use strict';
-        var that = {},
-            move = function (x, y) {
-                document.getElementById('magnifier').style.left = x + 'px';
-                document.getElementById('magnifier').style.top = y + 'px';
-            };
+        var elems = document.getElementsByClassName('btn');
+        for (var i=0;i<elems.length;i+=1){
+          elems[i].style.display = 'none';
+        document.getElementsByClassName('txt')[0].style.display = "none";
+        document.getElementById('btn5').style.display = "block";
+        document.getElementById('btn6').style.display = "block";
+        document.getElementById('btn17').style.display = "block";
+        }
 
-        that.move = move;
-        return that;
-    },
-
-    myLupe = lupe(),
-
-    window_was_touched = function (event) {
-        'use strict';
-        var firstTouch = event.touches[0],
-            x = firstTouch.clientX - 100,
-            y = firstTouch.clientY - 100;
-
-        myLupe.move(x, y);
     };
-
-window.addEventListener('touchmove', window_was_touched);
-document.addEventListener('touchmove', function (event) {
+    window.addEventListener('devicemotion', function (event) {
     'use strict';
-    event.preventDefault();
+    var acc = event.accelerationIncludingGravity,
+        x = acc.x,
+        y = acc.y,
+        z = acc.z,
+        delta = Math.abs(x - lastAccX + y - lastAccY + y - lastAccZ);
+
+    console.log(delta);
+
+    if (delta > sensitivity) {
+
+        did_shake_phone();
+    }
+    lastAccX = x;
+    lastAccY = y;
+    lastAccZ = z;
 });
+

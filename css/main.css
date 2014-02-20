@@ -90,7 +90,7 @@ p {
 .text-after{
     width: 80%;
     position: absolute;
-    margin: 12%;
+    margin: 10%;
     display: none;
     top: 35%
 }
@@ -110,6 +110,17 @@ p {
 
 .logo-db img {
     width: 30%;
+}
+
+#btn-sparpreis img{
+
+width: 60%;
+
+}
+
+#btn-sparpreis {
+    text-align: center;
+
 }
 
 #magnifier {
@@ -415,6 +426,7 @@ p {
     width: 40%;
     position: absolute;
 }
+
 #glass {
     background: url('../img/kitty.png') repeat;
     background-attachment: fixed;

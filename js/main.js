@@ -2,7 +2,7 @@
 var lastAccX = 0,
     lastAccY = 0,
     lastAccZ = 0,
-    sensitivity = 50,
+    sensitivity = 40,
     counter = 0,
 
 

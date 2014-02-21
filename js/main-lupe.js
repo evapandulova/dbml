@@ -4,6 +4,8 @@ var magnifierEl = document.getElementById('magnifier'),
     lastAccY = 0,
     lastAccZ = 0,
 
+
+
     lupe = function () {
         'use strict';
         var that = {},
@@ -16,6 +18,8 @@ var magnifierEl = document.getElementById('magnifier'),
         return that;
     },
 
+
+
     myLupe = lupe(),
 
     did_drag_lupe = function (event) {
@@ -27,9 +31,23 @@ var magnifierEl = document.getElementById('magnifier'),
         myLupe.move(x, y);
     };
 
+  
+    show_last_frame = function () {
+        'use strict';
+        document.getElementById("magnifier").style.visibility = "hidden";
+        document.getElementById("btn1").style.visibility = "hidden";
+        document.getElementsByClassName('text')[0].style.visibility = "hidden";
+        document.getElementById("text-after").style.visibility = "visible";
+        document.getElementById("btn-sparpreis").style.visibility = "visible";
+        document.getElementById("bal").style.visibility = "visible";
+    }
+    setTimeout("show_last_frame()", 6000);  
+
+
 
 magnifierEl.addEventListener('touchmove', did_drag_lupe);
 document.addEventListener('touchmove', function (event) {
     'use strict';
     event.preventDefault();
 });
+

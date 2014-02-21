@@ -25,6 +25,49 @@ body {
 
 }
 
+#bal{
+width: 30%;
+text-align: center;
+margin: 10% 35%;
+position: absolute;
+
+}
+
+#bal img{
+
+    text-align: center;
+
+}
+
+#text-after{
+width: 90%;
+position: absolute;
+margin: 5%;
+top: 45%
+}
+
+#text-after a{
+    text-decoration: none;
+    color: black;
+    font-size: 100%;
+}
+
+#btn-sparpreis img{
+
+width: 100%;
+
+}
+
+#btn-sparpreis {
+top: 70%;
+text-align: center;
+position: absolute;
+width: 50%;
+margin: 5% 25% ;
+
+
+}
+
 /*.transparent{
     background: rgba(255, 255, 255, 0.7);
     position: absolute;
@@ -71,7 +114,7 @@ h1 {
     height: 25%;
     position: absolute;
     top: 40%;
-    font-size: 80%;
+    font-size: 90%;
 }
 .text-after, .text-try{
     width: 100%;

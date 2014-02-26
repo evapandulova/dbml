@@ -8,7 +8,7 @@ var lastAccX = 0,
     show_last_frame = function () {
         'use strict';
         document.getElementById('btn30-p').style.display = 'block';
-        document.getElementsByClassName('text')[0].style.display = 'none';
+        
         document.getElementsByClassName('train')[0].style.display = 'block';
         document.getElementsByClassName('text-after')[0].style.display = 'block';
 
@@ -70,6 +70,7 @@ var lastAccX = 0,
         document.getElementById('btn28').style.display = 'none';
         document.getElementById('btn29-p').style.display = 'none';
         document.getElementById('btn29').style.display = 'none';
+        document.getElementsByClassName('text-2')[0].style.display = 'none';
 
     },
 
@@ -137,7 +138,9 @@ var lastAccX = 0,
                 document.getElementById('btn28').style.display = 'none';
                 document.getElementById('btn29-p').style.display = 'block';
                 document.getElementById('btn29').style.display = 'none';
-                setTimeout("show_last_frame()", 5000);
+                document.getElementsByClassName('text')[0].style.display = 'none';
+                document.getElementsByClassName('text-2')[0].style.display = 'block';
+                setTimeout("show_last_frame()", 3000);
             }
         }
         counter = counter + 1;

@@ -36,12 +36,11 @@ var magnifierEl = document.getElementById('magnifier'),
         'use strict';
         document.getElementById("magnifier").style.visibility = "hidden";
         document.getElementById("btn1").style.visibility = "hidden";
-        document.getElementsByClassName('text')[0].style.visibility = "hidden";
         document.getElementById("text-after").style.visibility = "visible";
         document.getElementById("btn-buchen").style.visibility = "visible";
-        document.getElementById("bal").style.visibility = "visible";
+        document.getElementById("train").style.visibility = "visible";
     }
-    setTimeout("show_last_frame()", 6000);  
+    setTimeout("show_last_frame()", 10000);  
 
 
 

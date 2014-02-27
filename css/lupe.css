@@ -163,7 +163,7 @@ left: 0;
 }
 
 #glass {
-    background: url('../img/bg-button-p.png') repeat;
+    background: url('../img/bg-button-p.gif') repeat;
     background-attachment: fixed;
     width: 50px;
     position: absolute;
@@ -214,3 +214,17 @@ left: 0;
     background-position:right -27px
 }
 
+.train{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    display: none;
+}
+
+#hel{
+    color: blue;
+    position: absolute;
+    top:71%;
+    left: 32%
+
+}

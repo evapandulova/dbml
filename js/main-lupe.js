@@ -38,7 +38,7 @@ var magnifierEl = document.getElementById('magnifier'),
         document.getElementById("btn1").style.visibility = "hidden";
         document.getElementsByClassName('text')[0].style.visibility = "hidden";
         document.getElementById("text-after").style.visibility = "visible";
-        document.getElementById("btn-sparpreis").style.visibility = "visible";
+        document.getElementById("btn-buchen").style.visibility = "visible";
         document.getElementById("bal").style.visibility = "visible";
     }
     setTimeout("show_last_frame()", 6000);  

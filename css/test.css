@@ -1,0 +1,41 @@
+#area {
+    width: 200px;
+    height: 400px;
+    position: relative;
+}
+
+#area > div {
+    background-color: rgba(122, 122, 122, 0.3);
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+#box0 {
+    background-color: rgba(255, 0, 0, 0.5) !important;
+    top: 150px;
+    left: 150px;
+}
+
+#box1 {
+    top: 260px;
+    left: 50px;
+}
+
+#box2 {
+    top: 110px;
+    left: 160px;
+}
+
+#box3 {
+    top: 200px;
+    left: 200px;
+}
+
+#box4 {
+    top: 50px;
+    left: 200px;
+}
+

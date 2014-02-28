@@ -37,7 +37,7 @@ position: absolute;
 width: 90%;
 position: absolute;
 margin: 5%;
-top: 35%
+top: 40%
 }
 
 #text-after a{
@@ -49,7 +49,7 @@ top: 35%
 
 
 #btn-buchen {
-top: 65%;
+top: 70%;
 text-align: center;
 position: absolute;
 width: 50%;
@@ -221,10 +221,3 @@ left: 0;
     display: none;
 }
 
-#hel{
-    color: blue;
-    position: absolute;
-    top:71%;
-    left: 32%
-
-}

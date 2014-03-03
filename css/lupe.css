@@ -136,45 +136,37 @@ h1 {
 }
 
 #magnifier {
-    top: 20%;
-    left: 20%;
+    top: 0;
+    left: 0;
     width: 30%;
     position: absolute;
     
 }
 
 #magnifier img {
-z-index: 1000 !important;
-position: absolute;
-width: 100%;
-top: 0;
-left: 0;
-
-}
-
-
-#btn29{
-    top:10%;
-    left: 30%;
-    display: none;
-    width: 40%;
+    z-index: 1000 !important;
     position: absolute;
-
+/*    width: 100%;*/
+    top: 0;
+    left: 0;
 }
 
 #glass {
-    background: url('../img/bg-button-p.gif') repeat;
+    background: url('../img/bg-button-p.gif');
     background-attachment: fixed;
-    width: 50px;
-    position: absolute;
     width: 92px;
     height: 92px;
-    position: absolute;
-    top: 0;
-    left: 0;
+/*    position: absolute;
+    top: 0px;
+    left: 0px;*/
     border-radius: 47px;
     background-size: 100%;
 }
+
+
+
+
+
 
 /* DB original "Jetzt Buchen" */
 
@@ -214,10 +206,18 @@ left: 0;
     background-position:right -27px
 }
 
-.train{
-    width: 100%;
+
+#train img{
     position: absolute;
-    top: 0%;
-    display: none;
+    top: 0;
+
 }
 
+#gluckwunsch{
+    position: absolute;
+    top: 0;
+
+
+
+
+}

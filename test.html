@@ -3,50 +3,29 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Deutsche Bahn</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/test.css">
-        <link rel="stylesheet" href="css/lupe.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>        
-    </head>
-    <body>
-<!--     <div class="box" id="box1">
-    <h3> Touch Me! </h3>
+
+
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> test </title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
+  <script type="text/javascript"src="js/test.js"></script>
+  <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/lupe.css">
+</head>
+
+<body>
+
+    <div id="div1" class="ui-draggable" style="position: relative;">
+        Div1
+    </div><br>
+
+    <div id="div2" class="ui-draggable" style="position: relative;">
+        Div2
     </div>
 
-    <p>Click the button to get a time-based greeting.</p>
-    <button onclick="myFunction()">Try it</button>
-    <p id="demo"></p>
-
-     
-    <h3 id="statusdiv">Status</h3> -->
-
-        <div id="magnifier" >
-            <img id="magnifier-img" src="img/magnifier.png"/>
-            <div id="glass"></div>
-        </div>
-        
-    <div id="area">
-
-
-
-        <div id="box0"></div>
-        <div id="box1">1</div>
-        <div id="box2">2</div>
-        <div id="box3">3</div>
-        <div id="box4">4</div>
-    </div>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
-        <script src="js/plugins.js"></script>
-        <script src="js/test.js"></script>
-        <script src="js/main-lupe.js"></script>
-    </body>
+    <p>Colliding? <span id="result">false</span></p>
+</body>
 </html>

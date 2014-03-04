@@ -4,12 +4,23 @@ html {
 
 body {
     margin: 0;
-    min-height: 504px;
+    min-height: 300px;
     overflow: hidden;
     background-size: 100% auto;
-    font-family: Arial,sans-serif;
-    background-image: url(../img/bg2.png);
+    font-family:Arial,sans-serif;
     background-repeat: repeat;
+    background-image: url(../img/bg2.png);
+}
+
+h1 {
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 #container {
@@ -21,134 +32,24 @@ body {
     overflow: hidden;
 }
 
-#bal{
-width: 30%;
-text-align: center;
-margin: 10% 35%;
-position: absolute;
-
-}
-
-#bal img{
-    text-align: center;
-}
-
-#text-after{
-width: 90%;
-position: absolute;
-margin: 5%;
-top: 40%
-}
-
-#text-after a{
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
-}
-
-
-
-#btn-buchen {
-top: 70%;
-text-align: center;
-position: absolute;
-width: 50%;
-margin: 5% 25% ;
-text-decoration: none;
-}
-
-
-#btn-buchen a{
-text-decoration: none;
-}
-/*.transparent{
-    background: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}*/
-
-.main-container  > * {
-    z-index: 10;
-}
-
-.transparent img {
+#container img {
     width: 100%;
 }
 
-h1 {
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial;
-}
-
-.logo-db {
-    width: 100%;
-    text-align: center;
-    bottom: 2px;
-    position: absolute;
-}
-
-.logo-db img {
-    width: 30%;
-}
-
-
-.btn {
-    width: 100%;
-    position: absolute;
-    /*-webkit-transition: all 0.1s linear 0.5s;*/
-}
-.text {
-    width: 100%;
-    height: 25%;
-    position: absolute;
-    top: 48%;
-}
-.text-after, .text-try{
-    width: 100%;
-    position: absolute;
-    top: 45%;
-    display: none;
-}
-
-
-.text-after a{
-    text-decoration: none;
-    color: black;
-    font-size: 80%;
-
-}
-
-.logo-db {
-    width: 100%;
-    text-align: center;
-    bottom: 2px;
-    position: absolute;
-
-}
-
-.logo-db img {
-    width: 20%;
-}
+/* Lupe */
 
 #magnifier {
-    top: 0;
-    left: 0;
+    position: relative;
+    top: 10%;
+    left: 10%;
     width: 30%;
-    position: absolute;
-    
 }
 
 #magnifier img {
-    z-index: 1000 !important;
     position: absolute;
-/*    width: 100%;*/
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 #glass {
@@ -156,19 +57,71 @@ h1 {
     background-attachment: fixed;
     width: 92px;
     height: 92px;
-/*    position: absolute;
-    top: 0px;
-    left: 0px;*/
     border-radius: 47px;
     background-size: 100%;
 }
 
+#last-scene, #gluckwunsch{
+    display: none;
+}
 
+/* Colliding Element */
 
+#colliding { 
+    width: 15%; 
+    height: 15%; 
+    top: 200px;
+    left: 100px;
+    background-color: transparent;
+    position: absolute;
+}
 
+/* Gluckwunsch Scene */
 
+#gluckwunsch{
+    position: absolute;
+    top: 0;
+}
 
-/* DB original "Jetzt Buchen" */
+/* Last Scene */
+
+#text-after{
+    width: 90%;
+    position: absolute;
+    margin: 5%;
+    top: 40%
+}
+
+#btn-buchen {
+    top: 70%;
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    margin: 5% 25% ;
+}
+
+#first-scene {
+    width: 100%;
+    position: absolute;
+}
+
+#train img{
+    position: absolute;
+    top: 0;
+}
+
+#logo-db {
+    width: 100%;
+    text-align: center;
+    bottom: 2px;
+    position: absolute;
+}
+
+#logo-db img {
+    width: 20%;
+}
+
+/* DB style "Sparpreis-Finder" */
 
 .button {
     background:url(../img/button_left.png) no-repeat 0 0;
@@ -177,14 +130,14 @@ h1 {
     padding:0;
     padding-left:31px;
     border:0;
-
 }
+
 .button span {
     background:url(../img/button_right.png) no-repeat right 0;
     display:block;
     height:27px;
-
 }
+
 .button span span {
     background:url(../img/button_center.png) repeat-x 0 0;
     display:block;
@@ -194,30 +147,14 @@ h1 {
     color:#fff;
     font-weight:bold;
     font-size:14px;
-    font-family:Arial,sans-serif;
     text-shadow:0 1px 4px #333;
     line-height:18px;
-
 }
+
 .button.hover,.button.hover span span{
     background-position:0 -27px
 }
+
 .button.hover span {
     background-position:right -27px
-}
-
-
-#train img{
-    position: absolute;
-    top: 0;
-
-}
-
-#gluckwunsch{
-    position: absolute;
-    top: 0;
-
-
-
-
 }
